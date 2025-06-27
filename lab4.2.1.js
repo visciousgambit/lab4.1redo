@@ -31,3 +31,45 @@ function calculateTotalCost(price, quantity, taxRate) {
 // Example usage
 console.log(calculateTotalCost(10, 2, 0.1));  // Output: 22
 console.log(calculateTotalCost("10", 2, 0.1)); // Output: "Invalid input."
+
+
+function checkEligibility(age, isEmployed) {
+    if (age < 18 && isEmployed) {
+        return "You are elgible for the program.";
+    }   else if (age < 18 && !isEmployed) {
+        return "You are conditionally eligible for the program.";
+    }   else {
+        return "You are not eligible for the program."
+    }
+}
+
+age = 14
+
+console.log(checkEligibility(true));
+
+
+
+
+
+
+
+
+
+
+
+function checkEligibility(age, isEmployed) {
+    if (age < 18 && isEmployed) {
+        return "You are elgible for the program.";
+    }   else if (age < 18 && !isEmployed) {
+        return "You are conditionally eligible for the program.";
+    }   else {
+        return "You are not eligible for the program."
+    }
+}
+
+age = 29
+
+console.log(checkEligibility(true));
+
+
+
