@@ -17,20 +17,20 @@ console.log(formatFullName("john", "doe"));
 console.log(formatFullName("", "smith"));  
 
 
-function calculateTotalCost(price, quantity, taxRate) {
-  // Check if all inputs are valid numbers
-  if (typeof price !== 'number' || typeof quantity !== 'number' || typeof taxRate !== 'number') {
+function calculateTotalCost(price, quantity, taxRate, discount) {
+
+  if (typeof price !== 'number' || typeof quantity !== 'number' || typeof taxRate !== 'number' || typeof discount !== 'number') {
     return "Invalid input.";
   }
 
-  // Calculate total cost
+
   var totalCost = (price * quantity) * (1 + taxRate);
   return totalCost;
 }
 
-// Example usage
-console.log(calculateTotalCost(10, 2, 0.1));  // Output: 22
-console.log(calculateTotalCost("10", 2, 0.1)); // Output: "Invalid input."
+
+console.log(calculateTotalCost(10, 2, 0.1,.1));  
+
 
 
 function checkEligibility(age, isEmployed) {
